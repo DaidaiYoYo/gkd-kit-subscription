@@ -1,0 +1,61 @@
+name: Bug 报告
+description: 提交一个 Bug 帮助我们改进项目
+title: '[BUG] '
+labels: ['bug']
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug 描述
+      description: 您遇到了什么问题？
+      placeholder: 在 xx 时候遇到了......
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 复现步骤
+      description: 如何复现您遇到的问题？
+      placeholder: |
+        1. 打开 xx 应用
+        2. 在 xx 页面
+        3. 遇到了 xx 问题
+    validations:
+      required: true
+
+  - type: input
+    id: device-model
+    attributes:
+      label: 设备型号
+      description: 请填写您的设备型号
+      placeholder: Xiaomi 17
+    validations:
+      required: false
+
+  - type: input
+    id: os-version
+    attributes:
+      label: 系统版本
+      description: 请填写系统版本号
+      placeholder: Xiaomi HyperOS 3.0.302.0.WNNCNXM.C08
+    validations:
+      required: false
+
+  - type: input
+    id: gkd-version
+    attributes:
+      label: GKD 版本
+      description: 请填写 GKD 版本号
+      placeholder: 1.12.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 额外信息
+      description: 这里可以对额外信息进行补充说明
+      placeholder: 日志、截图等信息
+    validations:
+      required: false
