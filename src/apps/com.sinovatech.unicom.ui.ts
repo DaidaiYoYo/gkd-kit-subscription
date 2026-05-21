@@ -11,6 +11,7 @@ export default defineGkdApp({
       name: RuleTool.ruleGroupName(CategoryEnum.FIRST_SCREEN_AD),
       fastQuery: true,
       matchTime: 10000,
+      actionMaximumKey: 0,
       actionMaximum: 1,
       resetMatch: 'app',
       priorityTime: 10000,
