@@ -17,13 +17,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.baidu.baidumaps.MapsActivity',
           matches: '[vid="ms_skipView"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/26155f8b-7b54-4c36-8d1f-628bff6dc7fa',
         },
         {
           key: 1,
-          activityIds: 'com.baidu.baidumaps.MapsActivity',
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/cdcf0464-94ef-4831-af89-d3e0aeaa39fe',
         },

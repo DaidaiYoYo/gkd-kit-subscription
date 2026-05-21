@@ -3,8 +3,8 @@ import { RuleTool } from '../utils/rule';
 import { CategoryEnum } from '../constants/categoryConstant';
 
 export default defineGkdApp({
-  id: 'com.ximalaya.ting.android',
-  name: '喜马拉雅',
+  id: 'com.ct.client',
+  name: '中国电信',
   groups: [
     {
       key: 0,
@@ -17,9 +17,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="xm_ad_host_count_down_text"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/ee358fd1-0739-426e-a162-899acb8dc487',
-          snapshotUrls: 'https://i.gkd.li/i/28059297',
+          matches: '[vid="btSkip"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/875a2668-6096-4b93-a0cc-5cfed157f526',
         },
       ],
     },

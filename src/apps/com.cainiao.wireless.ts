@@ -17,8 +17,6 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds:
-            'com.cainiao.wireless.homepage.view.activity.AdsActivity',
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/d94cc56b-97d0-4026-92a5-af93c421abb6',
         },
