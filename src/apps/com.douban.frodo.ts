@@ -1,11 +1,10 @@
 import { defineGkdApp } from '@gkd-kit/define';
 import { RuleTool } from '../utils/rule';
 import { CategoryEnum } from '../constants/categoryConstant';
-import { GeneralMatchEnum } from '../constants/matchConstant';
 
 export default defineGkdApp({
-  id: 'com.tencent.qqlive',
-  name: '腾讯视频',
+  id: 'com.douban.frodo',
+  name: '豆瓣',
   groups: [
     {
       key: 0,
@@ -19,12 +18,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: GeneralMatchEnum.SKIP_TEXT,
-          action: 'clickCenter',
-          exampleUrls: [
-            'https://e.gkd.li/5555b104-9d38-43c4-854d-1fb1e3d1f102',
-            'https://e.gkd.li/768ffea9-eaef-405f-84b9-b472c5101ca8',
-          ],
+          matches: '[vid="sdk_view"] >3 View[visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/4343d7aa-c4bb-4e44-9308-f74122568be2',
         },
       ],
     },

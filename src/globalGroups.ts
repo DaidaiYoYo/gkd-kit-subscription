@@ -1,6 +1,7 @@
 import { defineGkdGlobalGroups } from '@gkd-kit/define';
 import { RuleTool } from './utils/rule';
 import { CategoryEnum } from './constants/categoryConstant';
+import { GeneralMatchEnum } from './constants/matchConstant';
 
 export default defineGkdGlobalGroups([
   {
@@ -16,7 +17,7 @@ export default defineGkdGlobalGroups([
     rules: [
       {
         key: 0,
-        matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
+        matches: GeneralMatchEnum.SKIP_TEXT,
       },
     ],
   },
