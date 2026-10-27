@@ -18,9 +18,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="xm_ad_host_count_down_text"][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/ee358fd1-0739-426e-a162-899acb8dc487',
-          snapshotUrls: 'https://i.gkd.li/i/28059297',
+          matches:
+            '[vid="host_splash_skip_layout"] > TextView[visibleToUser=true]',
         },
       ],
     },

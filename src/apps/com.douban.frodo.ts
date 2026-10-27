@@ -18,8 +18,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="sdk_view"] >3 View[visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/4343d7aa-c4bb-4e44-9308-f74122568be2',
+          matches: '[vid="_ad_image_"][visibleToUser=true]',
+          position: { left: 1050, top: 200 },
         },
       ],
     },
